@@ -1,0 +1,41 @@
+/* @font-face {
+  font-family: "NunitoSans";
+  src: url("./fonts/NunitoSans.ttf") format("truetype");
+} */
+
+@font-face {
+  font-family: "Smartie CAPS";
+  src: local("Smartie CAPS"), url("./fonts/SMARC.TTF") format("truetype");
+}
+
+:root {
+  --border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  --shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
+  --shadow-hover: 2px 8px 4px -6px hsla(0, 0%, 0%, 0.3);
+  --text-color: #293745;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: -apple-system, Ubuntu, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.VisuallyHidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}

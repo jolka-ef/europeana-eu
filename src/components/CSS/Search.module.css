@@ -1,0 +1,53 @@
+.Form {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 1em;
+}
+.Button {
+  background-color: transparent;
+  background-image: url(../../images/glass.svg);
+  background-position: center;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+  height: 4em;
+  margin: 0.75rem;
+  transition: all 200ms cubic-bezier(0.86, 0, 0.07, 1);
+  width: 4em;
+}
+.Button:hover,
+.Button:focus {
+  filter: brightness(1) sepia(1) hue-rotate(-70deg) saturate(5);
+}
+.Button:active {
+  transform: scale(0.85);
+}
+.Input {
+  border: 2px solid var(--text-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  font-size: 1.5rem;
+  min-width: min(25ch, 100%);
+  outline: none;
+  padding: 1em;
+  width: 0;
+}
+.Input:hover,
+.Input:focus {
+  box-shadow: var(--shadow-hover), inset 0px 0px 1px 3px;
+}
+.Label {
+  font-family: "Smartie CAPS";
+  font-size: 2.75em;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.Link{
+  color: inherit;
+  cursor:pointer;
+  text-underline-offset: 10px;
+}

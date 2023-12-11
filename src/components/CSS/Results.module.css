@@ -1,0 +1,55 @@
+.List {
+  align-items: center;
+  background: #f6f3ea;
+  box-shadow: 3px 2px 12px rgba(0, 0, 0, 0.4);
+  display: grid;
+  grid-gap: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+  list-style: none;
+  margin: 3rem 5vw;
+  padding: 2.2rem;
+}
+
+.Button {
+  background-color: #f6f3ea;
+  border: 2px solid var(--text-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+  display: block;
+  font-size: 1.5rem;
+  margin: auto;
+  margin-top: 2rem;
+  outline: none;
+  padding: 1em;
+}
+.Button:hover,
+.Button:focus {
+  box-shadow: var(--shadow-hover), inset 0px 0px 1px 3px;
+}
+
+.Content {
+  margin: 3rem auto;
+}
+.Info {
+  font-family: "Smartie CAPS";
+  font-size: 3em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+.ItemPreview {
+  color: inherit;
+  text-decoration: none;
+}
+
+.ItemPreview-image {
+  width: 100%;
+}
+
+.ItemPreview-provider {
+  color: inherit;
+  font-style: italic;
+  letter-spacing: 0.5px;
+  padding: 0.5rem;
+}
